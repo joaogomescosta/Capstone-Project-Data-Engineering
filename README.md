@@ -6,5 +6,5 @@
 
 In this first project firstly was required to design the schema for a OLTP database to store data like row ID, product ID, customer ID, price, quantity, and time stamp for an e-commerce company and secondly to load  data into the OLTP database. Also was necessary to write a bash script that exported records created in the last 24 hours into another file.
 
-Link: [Project 1: Data Platform Architecture and OLTP Database]
+Link: [(Project 1: Data Platform Architecture and OLTP Database)]
 
