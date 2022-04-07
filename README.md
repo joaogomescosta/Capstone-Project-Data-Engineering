@@ -10,4 +10,4 @@ Link: [Data Platform Architecture and OLTP Database](https://github.com/joaogome
 
 
 ## Project 5: ETL and Data Pipelines using Apache AirFlow
-Link: [ETL and Data Pipelines using Apache AirFlow](https://github.com/joaogomescosta/Capstone-Project-Data-Engineering/tree/main/Data%20Platform%20Architecture%20and%20OLTP%20Database)
+Link: [ETL and Data Pipelines using Apache AirFlow](https://github.com/joaogomescosta/Capstone-Project-Data-Engineering/tree/main/ETL%20and%20Data%20Pipelines%20using%20Apache%20AirFlow)
