@@ -8,6 +8,9 @@ In this project was required to design the schema for a OLTP database to store d
 
 Link: [Data Platform Architecture and OLTP Database](https://github.com/joaogomescosta/Capstone-Project-Data-Engineering/tree/main/Data%20Platform%20Architecture%20and%20OLTP%20Database)
 
+## Project 2: NoSQL databases - MongoDB
+
+In this assignment, an e-commerce company needed to design a data platform that used MongoDB as a NoSQL database to store catalog data.
 
 ## Project 5: ETL and Data Pipelines using Apache AirFlow
 
