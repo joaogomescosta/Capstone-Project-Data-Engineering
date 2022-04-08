@@ -138,3 +138,83 @@ ibm_db.close(conn)
 
 # End of program
 ```
+### Start Apache Airflow
+```
+start_airflow
+```
+### Download the dataset from the source to the destination
+```
+wget -P /home/project/airflow/dags/capstone https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DB0321EN-SkillsNetwork/ETL/accesslog.txt
+```
+### Create a DAG that does the folowing tasks:
+- Task 1 - This task should extract the ipaddress field from the web server log file and save it into a file named extracted_data.txt
+- Task 2 - This task should filter out all the occurrences of ipaddress "198.46.149.143" from extracted_data.txt and save the output to a file named
+transformed_data.tx
+- Task 3 - This task should archive the file transformed_data.txt into a tar file named weblog.tar
+```
+# import the libraries
+from datetime import timedelta
+
+# The DAG object; we'll need this to instantiate a DAG
+from airflow import DAG
+
+# Operators; we need this to write tasks!
+from airflow.operators.bash_operator import BashOperator
+
+# This makes scheduling easy
+from airflow.utils.dates import days_ago
+
+# Defining DAG arguments
+default_args = {
+	'owner': 'Joao Costa',
+	'start_date': days_ago(0),
+	'email': ['cristiano_ronaldo@cr7.com'],
+	'email_on_failure': True,
+	'email_on_retry': True,
+	'retries': 1,
+	'retry_delay': timedelta(minutes=5),
+}
+
+# Define the DAG
+dag = DAG(
+	dag_id='process_web_log',
+	default_args=default_args,
+	description='ETL DAG using Bash',
+	schedule_interval=timedelta(days=1),
+)
+
+
+
+# Create task 1 - This task should extract the ipaddress field from the web server log file and save it into a file named extracted_data.txt
+extract = BashOperator(
+	task_id='extract_data',
+	bash_command='grep -E -o "(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)" accesslog.txt > extracted_data.txt',
+	dag=dag,
+)
+
+
+# Create task 2 -  This task should filter out all the occurrences of ipaddress "198.46.149.143" from extracted_data.txt and save the output to a file named
+transformed_data.tx
+transform = BashOperator(
+	task_id='transform_data',
+	bash_command='grep -v 198.46.149.143 extracted_data.txt > transformed_data.txt',
+	dag=dag,
+)
+
+# Create task 3 - This task should archive the file transformed_data.txt into a tar file named weblog.tar
+load = BashOperator(
+	task_id='load_data',
+	bash_command='tar -zcvf weblog.tar.gz transformed_data.txt',
+	dag=dag,
+)
+
+
+# Define the task pipeline
+extract >> transform >> load
+
+# Submit the DAG
+cp process_web_log.py $AIRFLOW_HOME/dags
+
+# Unpause the DAG
+airflow dags unpause process_web_log
+```
