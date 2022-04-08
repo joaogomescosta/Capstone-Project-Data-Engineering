@@ -12,6 +12,8 @@ Link: [Data Platform Architecture and OLTP Database](https://github.com/joaogome
 
 In this assignment, an e-commerce company needed to design a data platform that used MongoDB as a NoSQL database to store catalog data.
 
+Link: [NoSQL databases - MongoDB](https://github.com/joaogomescosta/Capstone-Project-Data-Engineering/tree/main/NoSQL%20databases%20-%20MongoDB)
+
 ## Project 5: ETL and Data Pipelines using Apache AirFlow
 
 In this project was necessary to develop a python script to keep data synchronized between different databases/data warehouses as a part of a daily routine in a e-commerce company. One task that is routinely performed was the sync up of staging data warehouse and production data warehouse. Automating this sync up will save a lot of time and standardize the process. A python script will perform the incremental data load from MySQL server which acts as a staging warehouse to the IBM DB2 which is a production data warehouse. Lastly a DAG was created in Airflow to perform several tasks. A pipeline was built that analyzes the web server log file, extracts the required lines and fields and transforms and load data.
