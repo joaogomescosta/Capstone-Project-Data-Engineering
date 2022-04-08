@@ -91,6 +91,7 @@ dsn = (
 # create connection
 conn = ibm_db.connect(dsn, "", "")
 print ("Connected to database: ", dsn_database, "as user: ", dsn_uid, "on host: ", dsn_hostname)
+
 # Find out the last rowid from DB2 data warehouse
 # The function get_last_rowid must return the last rowid of the table sales_data on the IBM DB2 database.
 
@@ -116,7 +117,6 @@ new_records = get_latest_records(last_row_id)
 print (new_records)
 
 print("New rows on staging datawarehouse = ", len(new_records))
-```
 
 # Insert the additional records from MySQL into DB2 data warehouse.
 # The function insert_records must insert all the records passed to it into the sales_data table in IBM DB2 database.
@@ -138,3 +138,4 @@ connection.close()
 # disconnect from DB2 data warehouse
 ibm_db.close(conn)
 # End of program
+```
