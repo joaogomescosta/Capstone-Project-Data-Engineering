@@ -218,3 +218,5 @@ cp process_web_log.py $AIRFLOW_HOME/dags
 # Unpause the DAG
 airflow dags unpause process_web_log
 ```
+# DAG running on Airflow console
+##![dag_runs](https://user-images.githubusercontent.com/95388763/162447853-1ae586c3-c1b8-460d-8358-4b24f46c4988.png)
