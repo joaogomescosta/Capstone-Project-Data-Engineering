@@ -2,7 +2,7 @@
 
 ## Overview
 
-In this assignment, an e-commerce company needed to design a data platform that used MongoDB as a NoSQL database to store catalog data.
+In this assignment, an e-commerce company needed to design a data platform that used MongoDB as a NoSQL database to store catalog data. After importing the the data was necessary to create an indexe, make some queries and export selected fields from a collection into a csv file.
 
 ## Objectives
 
