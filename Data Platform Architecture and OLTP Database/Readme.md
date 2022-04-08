@@ -14,31 +14,31 @@ In this project was required to design the schema for a OLTP database to store d
 - phpMyAdmin 5.0.4
 - Skills Network Labs Cloud IDE
 
-## Design a table named sales_data on the sample data given by the company
+### Design a table named sales_data on the sample data given by the company
 ![table 2](https://user-images.githubusercontent.com/95388763/162231277-23c3f931-e236-4dfc-af79-ee464a2c6398.png)
 
 ```
 CREATE TABLE `sales`.`sales_data` (`product_id` INT NOT NULL , `customer_id` INT NOT NULL, `price` INT NOT NULL , `quantity` INT NOT NULL , `timestamp` TIMESTAMP NOT NULL ) ENGINE = InnoDB;
 ```
 
-## Import the data from oltpdata.csv into sales_data table using phpMyAdmin
+### Import the data from oltpdata.csv into sales_data table using phpMyAdmin
 ![importdata](https://user-images.githubusercontent.com/95388763/162233671-04e94055-0679-4b72-8145-99f8ad962502.png)
 
-## List the tables in the database sales
+### List the tables in the database sales
 ```
 SHOW FULL TABLES WHERE table_type = 'BASE TABLE';
 ```
-## Write a query to find out the count of records in the tables sales_data
+### Write a query to find out the count of records in the tables sales_data
 ```
 SELECT COUNT(*) FROM sales_data;
 ```
-## Create an index named ts on the timestamp field and list List indexes on the table sales_data 
+### Create an index named ts on the timestamp field and list List indexes on the table sales_data 
 ```
 CREATE INDEX ts ON sales_data (timestamp);
 SHOW INDEXES from sales_data;
 ```
 
-## Write a bash script named datadump.sh that exports all the rows in the sales_data table to a file named sales_data.sql
+### Write a bash script named datadump.sh that exports all the rows in the sales_data table to a file named sales_data.sql
 ```
 # The beloow line tells the interpreter this codes needs to be run as a shell script
 #!/bin/sh
