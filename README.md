@@ -10,7 +10,7 @@ Link: [Data Platform Architecture and OLTP Database](https://github.com/joaogome
 
 ## Project 2: NoSQL databases - MongoDB
 
-In this assignment, an e-commerce company needed to design a data platform that used MongoDB as a NoSQL database to store catalog data.
+In this assignment, an e-commerce company needed to design a data platform that used MongoDB as a NoSQL database to store catalog data. After importing the the data was necessary to create an indexe, make some queries and export selected fields from a collection into a csv file.
 
 Link: [NoSQL databases - MongoDB](https://github.com/joaogomescosta/Capstone-Project-Data-Engineering/tree/main/NoSQL%20databases%20-%20MongoDB)
 
