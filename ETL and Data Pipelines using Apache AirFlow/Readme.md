@@ -31,7 +31,7 @@ start_mysql
 ### Create a database named sales
 ```
 # go to CLI
-mysql --host=127.0.0.1 --port=3306 --user=root --password=MjcwOTMtam9hb2Nv
+mysql --host=127.0.0.1 --port=3306 --user=root --password=******
 create database sales;
 use sales;
 ```
