@@ -18,6 +18,8 @@ Link: [NoSQL databases - MongoDB](https://github.com/joaogomescosta/Capstone-Pro
 
 In this project was required to design a data warehouse to an e-commerce company which provided a sample data to design a star schema, the design was accomplished by using an ERD tool. A second part of the assignment, consisted in loading the data provided by the company into the tables in CSV format, perform a set of queries for data analitycs (grouping sets, rollup, cube) and create a MQT.
 
+Link: [Data Warehousing and Data Warehousing Reporting](https://github.com/joaogomescosta/Capstone-Project-Data-Engineering/tree/main/Data%20Warehousing%20and%20Data%20Warehousing%20Reporting)
+
 ## Project 5: ETL and Data Pipelines using Apache AirFlow
 
 In this project was necessary to develop a python script to keep data synchronized between different databases/data warehouses as a part of a daily routine in a e-commerce company. One task that is routinely performed was the sync up of staging data warehouse and production data warehouse. Automating this sync up will save a lot of time and standardize the process. A python script will perform the incremental data load from MySQL server which acts as a staging warehouse to the IBM DB2 which is a production data warehouse. Lastly a DAG was created in Airflow to perform several tasks. A pipeline was built that analyzes the web server log file, extracts the required lines and fields and transforms and load data.
