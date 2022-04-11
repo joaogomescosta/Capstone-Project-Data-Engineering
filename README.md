@@ -22,7 +22,9 @@ Link: [Data Warehousing and Data Warehousing Reporting](https://github.com/joaog
 
 ## Project 4: Data Analytics
 
-Link: [Data Analytics]
+In this project was required to load data into a data warehouse in IBM DB2 and create a data source in Cognos that pointed to the database just created. It was necessary to design a reporting dashboard in Cogno Analytics that reflected the key metrics of the business of an e-commerce company.
+
+Link: [Data Analytics](https://github.com/joaogomescosta/Capstone-Project-Data-Engineering/tree/main/Data%20Analytics)
 
 ## Project 5: ETL and Data Pipelines using Apache AirFlow
 
