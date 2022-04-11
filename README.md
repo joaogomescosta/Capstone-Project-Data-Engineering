@@ -16,7 +16,7 @@ Link: [NoSQL databases - MongoDB](https://github.com/joaogomescosta/Capstone-Pro
 
 ## Project 3: Data Warehousing and Data Warehousing Reporting
 
-In this project was required to design a data warehouse to an e-commerce company which provided a sample data to design a star schema, the design was accomplished by using an ERD tool. A second part of the assignment, consisted in loading the data provided by the company into the tables in CSV format, perform a set of queries for data analitycs (grouping sets, rollup, cube) and create a MQT.
+In this project was required to design a data warehouse to an e-commerce company which provided a sample data to design a star schema, the design was accomplished by using an ERD tool. A second part of the assignment, consisted in loading the data provided by the company into the tables in CSV format, perform a set of aggregation queries for data analitycs (grouping sets, rollup, cube) and create a MQT.
 
 Link: [Data Warehousing and Data Warehousing Reporting](https://github.com/joaogomescosta/Capstone-Project-Data-Engineering/tree/main/Data%20Warehousing%20and%20Data%20Warehousing%20Reporting)
 
