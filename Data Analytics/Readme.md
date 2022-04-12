@@ -39,6 +39,7 @@ Create a line chart of month wise total sales for the year 2020
 
 ### Create a pie chart
 Create a pie chart of category wise total sales.
+
 ![piechart](https://user-images.githubusercontent.com/95388763/162918698-d4bba54f-e72f-41b1-ae85-ef246bcd5605.png)
 
 
