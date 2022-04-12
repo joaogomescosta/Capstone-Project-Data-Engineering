@@ -15,7 +15,7 @@ In this project was required to load data into a data warehouse in IBM DB2 and c
 
 ## Environment setup
 
-Download data from link: https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DB0321EN-SkillsNetwork/analytics/ecommerce.csv?utm_medium=Exinfluencer&utm_source=Exinfluencer&utm_content=000026UJ&utm_term=10006555&utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCoursesIBMDB0321ENSkillsNetwork26764238-2021-01-01
+Download file: [ecommerce.csv](https://github.com/joaogomescosta/Capstone-Project-Data-Engineering/files/8471221/ecommerce.csv)
 
 ### Import data
 Import data in the file "ecommerce.csv" to DB2 into a table named sales_history
